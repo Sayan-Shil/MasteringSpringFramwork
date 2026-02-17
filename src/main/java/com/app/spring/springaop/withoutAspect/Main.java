@@ -8,6 +8,7 @@ public class Main {
         Comment comment = new Comment();
         comment.setComment("Hello Java");
         UserService userService = context.getBean(UserService.class);
+        System.out.println(userService.getClass().getSimpleName());
         userService.publishComment(comment);
     }
 }
